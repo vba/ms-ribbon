@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ribbon</title>
+	<link rel="stylesheet" href="css/ribbon.css"/>
+</head>
+<body>
+<div class="ms-window-title" unselectable="on">My Application</div>
+<div class="ms-ribbon">
+	<ul>
+		<li>
+			<input type="radio" checked name="tabs" id="tab1" class="ribbon-hidden">
+			<label for="tab1">Menu 1</label>
+
+			<div id="tab-content1" class="ribbon-content">
+
+
+				<div class="ribbon-section" unselectable="on">
+					<span class="section-title" unselectable="on">Tables</span>
+
+					<div class="ribbon-button ribbon-button-large" id="add-table-btn" unselectable="on">
+
+						<span class="button-help"
+						      unselectable="on">This button will add a table to your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/new-table.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/new-table.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/new-table.png">
+						<span class="button-title" unselectable="on">Add Table</span></div>
+					<div class="ribbon-button ribbon-button-large" id="open-table-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will open a table and add it to your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/open-table.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/open-table.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/open-table.png">
+						<span class="button-title" unselectable="on">Open Table</span></div>
+					<div class="ribbon-button ribbon-button-large disabled" id="del-table-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will remove the selected table from your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/delete-table.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/delete-table.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/delete-table.png">
+						<span class="button-title" unselectable="on">Remove Table</span></div>
+				</div>
+				<div class="ribbon-section-sep" unselectable="on"></div>
+
+				<div class="ribbon-section" unselectable="on">
+					<span class="section-title" unselectable="on">Pages</span>
+
+					<div class="ribbon-button ribbon-button-large" id="add-page-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will add a page to your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/new-page.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/new-page.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/new-page.png">
+						<span class="button-title" unselectable="on">Add Page</span></div>
+					<div class="ribbon-button ribbon-button-large" id="open-page-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will open a page and add it to your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/open-page.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/open-page.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/open-page.png">
+						<span class="button-title" unselectable="on">Open Page</span></div>
+					<div class="ribbon-button ribbon-button-large disabled" id="del-page-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will remove the selected page from your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/delete-page.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/delete-page.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/delete-page.png">
+						<span class="button-title" unselectable="on">Remove Page</span></div>
+				</div>
+				<div class="ribbon-section-sep" unselectable="on"></div>
+
+
+				<div class="ribbon-section" unselectable="on">
+					<span class="section-title" unselectable="on">Actions</span>
+
+					<div class="ribbon-button ribbon-button-small" id="run-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will run the program.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/run.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/run.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/run.png">
+						<span class="button-title" unselectable="on">Run</span></div>
+					<div class="ribbon-button ribbon-button-small" id="repeat-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will repeat something.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/repeat.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/repeat.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/repeat.png">
+						<span class="button-title" unselectable="on">Repeat</span></div>
+					<div class="ribbon-button ribbon-button-small disabled" id="save-btn" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will save your document.</span>
+						<img class="ribbon-icon ribbon-normal" src="icons/normal/save.png">
+						<img class="ribbon-icon ribbon-hot" src="icons/hot/save.png">
+						<img class="ribbon-icon ribbon-disabled" src="icons/disabled/save.png">
+						<span class="button-title" unselectable="on">Save</span></div>
+				</div>
+				<div class="ribbon-section-sep" unselectable="on"></div>
+
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="tabs" id="tab2" class="ribbon-hidden">
+			<label for="tab2">Menu 2</label>
+
+			<div id="tab-content2" class="ribbon-content">
+
+				<div class="ribbon-section" unselectable="on">
+					<span class="section-title" unselectable="on">More Stuff</span>
+
+					<div class="ribbon-button ribbon-button-large" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will do something else.</span>
+						<img class="ribbon-icon ribbon-normal ribbon-hot ribbon-disabled ribbon-implicit-disabled"
+						     src="icons/normal/bullet-orange.png">
+						<span class="button-title" unselectable="on">Other Feature</span></div>
+					<div class="ribbon-button ribbon-button-large disabled" id="other-btn-2" unselectable="on">
+
+						<span class="button-help" unselectable="on">This button will remove the selected table from your document.</span>
+						<img class="ribbon-icon ribbon-normal ribbon-hot ribbon-disabled ribbon-implicit-disabled"
+						     src="icons/normal/delete-table.png">
+						<span class="button-title" unselectable="on">Remove Table</span></div>
+				</div>
+				<div class="ribbon-section-sep" unselectable="on"></div>
+
+
+			</div>
+		</li>
+		<li class="blue">
+			<input type="radio" name="tabs" id="tab3" class="ribbon-hidden">
+			<label for="tab3">Menu 3</label>
+
+			<div id="tab-content3" class="ribbon-content"></div>
+		</li>
+	</ul>
+</div>
+<div class="content">
+	<p>
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu diam porta, tincidunt purus a, faucibus
+		leo. Morbi malesuada convallis ornare. Curabitur tempus, lorem sed congue aliquam, sem felis sollicitudin
+		mauris, a vestibulum ante tellus vel dui. Aliquam fermentum, lacus porta eleifend cursus, leo turpis vehicula
+		ligula, viverra bibendum elit nulla eget nulla. Fusce auctor nulla dui, nec imperdiet leo consectetur sit amet.
+		Integer at nulla augue. Fusce elementum arcu vehicula nisi eleifend, sit amet faucibus nunc pretium. Proin
+		ornare justo vel tortor posuere lacinia. Cras suscipit est ac mollis fermentum. Maecenas placerat tortor vel
+		tellus posuere gravida.
+	</p>
+
+	<p>
+
+		Ut nec porttitor velit. Cras vehicula justo non velit malesuada lacinia. Morbi eu erat vel tortor consectetur
+		tincidunt. Vestibulum laoreet lorem turpis, ac bibendum sapien bibendum eu. Sed a velit sed ligula pellentesque
+		tempor. Donec congue vel ante sed facilisis. Donec gravida quam ante, id volutpat augue sollicitudin a.
+
+	</p>
+
+	<p>
+
+		Suspendisse libero purus, semper eget elit a, ullamcorper dapibus lacus. Proin libero justo, ultrices eget
+		dapibus eu, tristique nec arcu. Cras mollis vitae lectus eu vulputate. Integer tortor ante, tristique quis
+		aliquet luctus, molestie vitae nisi. Aliquam tincidunt lorem quam, nec bibendum urna blandit vel. Fusce id
+		accumsan dolor. Maecenas et lacus malesuada, imperdiet orci sit amet, mattis risus. Pellentesque sapien lorem,
+		eleifend id lacus et, hendrerit pellentesque nisl. Praesent eu porttitor sem.
+
+	</p>
+
+	<p>
+
+		Proin lectus orci, blandit ut euismod non, pulvinar id nulla. Maecenas non mauris ut ligula aliquet aliquam at a
+		ipsum. Duis at mi urna. Suspendisse volutpat bibendum feugiat. Aliquam erat volutpat. Quisque luctus orci sed
+		lacinia semper. Proin augue ligula, viverra ut erat sit amet, dictum lobortis lorem.
+
+	</p>
+
+	<p>
+
+		Ut fringilla elit et gravida vehicula. Donec id purus rhoncus, pellentesque arcu et, laoreet enim. Nunc egestas
+		vulputate nunc at hendrerit. Aliquam in pellentesque risus. Praesent eget libero sodales, tristique dui
+		lobortis, facilisis dui. In elementum eget tortor sed posuere. Nulla tincidunt tortor nec nisi adipiscing, vitae
+		tincidunt purus consequat. Maecenas velit enim, dapibus vitae fermentum id, luctus quis dui. Proin tincidunt
+		lectus non enim consequat, sit amet pulvinar neque tempor. In sit amet orci eget mauris tempor egestas nec a
+		justo. In elementum rutrum nisi a dapibus. Vivamus quis pretium diam, vitae cursus ligula. Nam at sapien
+		fringilla, accumsan diam eget, commodo neque. Pellentesque euismod, nulla ac lobortis cursus, dolor nibh tempus
+		lorem, a imperdiet diam enim id nibh.
+	</p>
+
+	<p>
+
+		Sed eget nisl vitae purus facilisis dignissim at eget eros. Duis feugiat nibh et aliquam porttitor. Nullam
+		volutpat sem sed dolor iaculis consectetur. Donec nibh risus, adipiscing at venenatis ut, venenatis eu turpis.
+		In hac habitasse platea dictumst. Proin eget bibendum est. Nulla sit amet dolor sit amet lorem accumsan dapibus
+		ac posuere libero. Duis congue, sapien in dictum imperdiet, quam neque sodales lectus, accumsan lobortis sapien
+		diam id ligula. Nam ut dolor justo. Etiam libero magna, bibendum nec mi sed, elementum tempor justo. Aenean vel
+		dictum dui. Morbi sit amet est neque. Phasellus at tempus libero. Fusce ac cursus ipsum.
+
+	</p>
+
+	<p>
+
+		Sed at odio mi. Mauris quam nisl, dictum vel odio id, scelerisque tempus tortor. Vestibulum ante ipsum primis in
+		faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec tellus orci. Nunc purus est, porttitor sed
+		urna non, malesuada rhoncus erat. Nulla sagittis nisi nec ligula elementum lobortis. Ut urna lacus, cursus at
+		nibh sed, sodales facilisis massa. Cras purus lorem, scelerisque sed tellus id, aliquam vehicula eros. Phasellus
+		convallis tincidunt tortor, scelerisque congue libero mollis in. Nulla placerat enim auctor mi fringilla
+		pharetra id eu nulla. Ut tempus, tellus et fringilla dictum, dolor nisi consequat est, a congue arcu turpis nec
+		ligula.
+	</p>
+
+	<p>
+
+		Sed a tristique ligula. Aenean lobortis metus sed pharetra ornare. Fusce iaculis fringilla lacinia. Etiam
+		tincidunt vulputate tortor sed fermentum. Suspendisse interdum ultrices enim ac imperdiet. Aliquam erat
+		volutpat. Sed id ultricies turpis, non rhoncus mauris. Praesent vulputate, mauris vel lacinia feugiat, lectus
+		lectus egestas velit, sagittis pellentesque enim odio at nisl. Etiam et arcu non nisi porttitor vehicula a non
+		justo. Praesent pretium massa ante, molestie vestibulum est vehicula vitae. Etiam egestas malesuada arcu, sed
+		ultricies nulla euismod id. Nullam at diam et eros pharetra congue vitae ac lacus. Aliquam dolor mauris,
+		pulvinar pellentesque faucibus at, venenatis non magna. Sed malesuada auctor sapien et aliquam. Vivamus ornare
+		lacus a ligula rhoncus venenatis. Maecenas nec dui laoreet, adipiscing mi faucibus, tristique nisl.
+
+	</p>
+
+	<p>
+
+		Suspendisse ligula mi, malesuada id lectus ut, ultrices euismod sem. Duis et fringilla tellus. Quisque viverra
+		semper leo at viverra. Duis gravida nunc leo, sed scelerisque lectus feugiat egestas. Etiam pretium commodo urna
+		vitae blandit. Nulla eleifend elementum justo, ac accumsan odio tristique iaculis. Aenean feugiat sem eu justo
+		varius, quis dictum nulla dapibus. Donec tincidunt massa vel ullamcorper sagittis. Morbi iaculis, nisi quis
+		hendrerit gravida, quam risus convallis nulla, eu pretium erat purus ut augue. Maecenas porta adipiscing
+		dapibus. Aenean sapien leo, auctor sed imperdiet vitae, sollicitudin id dolor. Aliquam posuere urna ac libero
+		mattis, sed consequat ante porta.
+	</p>
+
+	<p>
+
+		Nam nunc nisl, luctus quis iaculis quis, suscipit ut nisi. Fusce metus enim, bibendum sit amet dolor at,
+		pellentesque vestibulum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate, risus
+		viverra posuere aliquet, arcu tellus sagittis ipsum, eu lobortis urna orci a tellus. Pellentesque habitant morbi
+		tristique senectus et netus et malesuada fames ac turpis egestas. Morbi felis urna, imperdiet et pulvinar vel,
+		malesuada eget est. Nam semper mauris at orci dapibus consequat. Nulla eget pellentesque diam.
+	</p>
+
+
+</div>
+
+</body>
+</html>
