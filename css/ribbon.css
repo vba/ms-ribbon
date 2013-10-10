@@ -41,7 +41,7 @@ body, html {
 	float: left;
 }
 
-.ms-ribbon > ul label {
+.ms-ribbon > ul .tab {
 	display: block;
 	padding: 5px 10px;
 	border-radius: 4px 4px 0 0;
@@ -52,7 +52,11 @@ body, html {
 	margin: -1px 4px;
 	position: relative;
 	border: 1px solid #eaedf1;
+	-webkit-user-select: none;        
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
+
 
 .ms-ribbon > ul label:hover {
 	background: #f1f3f4;
@@ -74,19 +78,7 @@ body, html {
 	position: relative;
 }
 
-.ms-ribbon [class=ribbon-hidden]:checked + label, 
-.ms-ribbon [class=ribbon-hidden]:checked + label:hover {
-	top: 0;
-	background: #fff;
-	margin: -1px 4px;
-	border: 1px solid #b6babf;
-	border-bottom: 1px solid #fff;
-	cursor: default;
-	z-index: 50;
-	position: relative;
-}
-
-.ms-ribbon > ul > li.blue > label {
+.ms-ribbon > ul > li.file > .tab {
 	background: #2860b3;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4488e5), to(#2860b3));
 	background: -moz-linear-gradient(#4488e5, #2860b3);
@@ -99,27 +91,21 @@ body, html {
 	z-index: 50;
 	position: relative;
 	margin: -1px 4px;
-	top: 0;
-}
-.ms-ribbon li.blue [class=ribbon-hidden]:checked + label, 
-.ms-ribbon li.blue [class=ribbon-hidden]:checked + label:hover {
-	background: #4488e5;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2860b3), to(#4488e5));
-	background: -moz-linear-gradient(#2860b3, #4488e5);
-	-pie-background: linear-gradient(#2860b3, #4488e5);
-	border: 1px solid #1f48a1;
-	cursor: default;
-	border-bottom: 1px solid #4488e5;
-	z-index: 55;
 }
 
 .ms-ribbon [class=ribbon-hidden]:checked ~ [class=ribbon-content] {
 	display: block;
 }
 
-.ms-ribbon li.blue > .ribbon-content   {
-	border-top: 5px solid #4488e5;
-	height: 78px;
+.ms-ribbon li.selected [class=ribbon-hidden]:checked + label, 
+.ms-ribbon li.selected [class=ribbon-hidden]:checked + label:hover {
+	border: 1px solid #1f48a1;
+	border-bottom: 1px solid #fff;
+}
+
+.ms-ribbon li.selected > .ribbon-content   {
+	border-top: 1px solid #1f48a1;
+	/*height: 82px;*/
 }
 
 .ms-ribbon .ribbon-content {

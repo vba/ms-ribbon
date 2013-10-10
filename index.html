@@ -8,9 +8,15 @@
 <div class="ms-window-title" unselectable="on">My Application</div>
 <div class="ms-ribbon">
 	<ul>
+		<li class="file">
+			<!--<input type="radio" name="tabs" id="fileTab">-->
+			<!--<label for="fileTab">File</label>-->
+			<span class="tab">File</span>
+			<div id="tab-content0" class="ribbon-content"></div>
+		</li>
 		<li>
 			<input type="radio" checked name="tabs" id="tab1" class="ribbon-hidden">
-			<label for="tab1">Menu 1</label>
+			<label for="tab1" class="tab">Menu 1</label>
 
 			<div id="tab-content1" class="ribbon-content">
 
@@ -102,7 +108,7 @@
 		</li>
 		<li>
 			<input type="radio" name="tabs" id="tab2" class="ribbon-hidden">
-			<label for="tab2">Menu 2</label>
+			<label for="tab2" class="tab">Menu 2</label>
 
 			<div id="tab-content2" class="ribbon-content">
 
@@ -120,18 +126,17 @@
 						<span class="button-help" unselectable="on">This button will remove the selected table from your document.</span>
 						<img class="ribbon-icon ribbon-normal ribbon-hot ribbon-disabled ribbon-implicit-disabled"
 						     src="icons/normal/delete-table.png">
-						<span class="button-title" unselectable="on">Remove Table</span></div>
+						<span class="button-title" unselectable="on">Remove Table</span>
+					</div>
 				</div>
 				<div class="ribbon-section-sep" unselectable="on"></div>
-
-
 			</div>
 		</li>
-		<li class="blue">
+		<li class="selected">
 			<input type="radio" name="tabs" id="tab3" class="ribbon-hidden">
-			<label for="tab3">Menu 3</label>
-
-			<div id="tab-content3" class="ribbon-content"></div>
+			<label for="tab3" class="tab">Selected</label>
+			<div id="tab-content3" class="ribbon-content">
+			</div>
 		</li>
 	</ul>
 </div>
