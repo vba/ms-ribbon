@@ -110,7 +110,8 @@ body, html {
 
 .ms-ribbon .ribbon-content {
 	display: none;
-	width: 100%;
+	width: calc(100% - 10px);
+	/*box-sizing: border-box;*/
 	position: absolute;
 	left: 0;
 	height: 82px;
