@@ -5,12 +5,21 @@
 	<link rel="stylesheet" href="css/ribbon.css"/>
 </head>
 <body>
-<div class="ms-window-title" unselectable="on">My Application</div>
+<!--<div class="ms-window-title" unselectable="on">My Application</div>-->
+<label for="ribbon_middle_menu_toggle" unselectable="on" class="ms-ribbon-toggle ms-window-title">
+	<div class="ribbon-menu">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</div>
+	<span class="title">
+		My Application
+	</span>
+</label>
+<input type="radio" checked id="ribbon_middle_menu_toggle" class="ms-ribbon-radio" />
 <div class="ms-ribbon">
 	<ul>
 		<li class="file">
-			<!--<input type="radio" name="tabs" id="fileTab">-->
-			<!--<label for="fileTab">File</label>-->
 			<span class="tab">File</span>
 			<div id="tab-content0" class="ribbon-content"></div>
 		</li>
